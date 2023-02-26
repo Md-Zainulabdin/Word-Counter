@@ -68,10 +68,13 @@ body{
     transition: all 0.3s;
     cursor: pointer;
 }
+
 .btn button:hover{
     background-color: #006fbfe0;
 }
+
 /* animated background */
+
 svg {
     position: absolute;
     top: 0;
@@ -82,4 +85,44 @@ svg {
     display: block;
     background-color: #0e4166;
     background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
+}
+
+/* Responsive Part */
+
+@media(max-width: 980px){
+    .wrapper{
+        width: 60%;
+    }
+}
+
+@media(max-width: 680px){
+
+    h1{
+        font-size: 22px !important;
+    }
+    span{
+        font-size: 18px !important;
+    }
+    .counter{
+        font-size: 18px !important;
+    }
+    .wrapper{
+        width: 80%;
+    }
+}
+
+@media(max-width: 480px){
+
+    h1{
+        font-size: 18px !important;
+    }
+    span{
+        font-size: 14px !important;
+    }
+    .counter{
+        font-size: 14px !important;
+    }
+    .wrapper{
+        width: 90%;
+    }
 }
